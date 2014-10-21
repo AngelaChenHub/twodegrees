@@ -12,6 +12,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 gem 'bootstrap-sass'
+gem 'devise', '~>3.4.0'
 
 # Only use sqlite in development (computer) and test
 group :development, :test do
