@@ -1,0 +1,15 @@
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+$body-bg: 													#bdc3c7;
+$font-family-sans-serif:						'Lato', 'Helvetica Neue', Helvetica;
+$navbar-default-bg: 								#ecf0f1;
+$navbar-default-link-color: 				#c0392b;
+$navbar-default-link-hover-color: 	#1abc9c;
+$brand-primary: 										#c0392b;
+$btn-default-bg:										#bdc3c7;
+
+@import 'bootstrap';
+
+.center {
+	text-align: center;
+}
