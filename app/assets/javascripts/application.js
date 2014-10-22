@@ -29,7 +29,6 @@ document.addEventListener('DOMContentLoaded', function(){
 			slide_current = (slides_total-1);
 		}
 		changePicture(slide_current);
-		ga("send","event","slider", "click", "click the next button",1);
 	});
 
 	document.getElementsByClassName('next')[0].addEventListener('click', function () {
