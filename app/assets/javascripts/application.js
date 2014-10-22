@@ -38,6 +38,8 @@ document.addEventListener('DOMContentLoaded', function(){
 			slide_current = (slides_total-4);
 		}
 		changePicture(slide_current);
+		ga ('send','event', 'slider', 'clickforward', 'clicked forward on a slide show',1)
+		mixpanel.track("Clicked forward");
 	});
 
 
