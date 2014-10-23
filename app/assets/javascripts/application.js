@@ -20,6 +20,7 @@
 // Declare the variables we will be using
 var slides, slides_total, slide_current;
 // Create an event listener to make sure code will execute after HTML is available
+
 document.addEventListener('DOMContentLoaded', function(){
 
 	document.getElementsByClassName('prev')[0].addEventListener('click', function () {
@@ -54,7 +55,9 @@ document.addEventListener('DOMContentLoaded', function(){
 	slides = document.getElementsByClassName('col-sm-12');
 	slides_total=slides.length;
 	slide_current=0;
-	changePicture(1);
+
+
+});
 
 	// set interval to call function every x milliseconds
 	window.setInterval(function() {
@@ -67,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function(){
 	}
 	changePicture(slide_current);
 },3000);
-});
+
 
 
 //receives the number and hides images and only displays that image number
@@ -77,7 +80,3 @@ function changePicture (slide) {
 	}
 	slides[slide].style.display='block';
 };
-
-
-
-// 
