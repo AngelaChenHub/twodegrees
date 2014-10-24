@@ -1,7 +1,17 @@
+
 <div class="container">
-	<h1>New pin</h1>
+	<div class="panel panel-default">
+		<div class="panel panel-heading">
+			<h1>New pin</h1>
+		</div>
 
-	<%= render 'form' %>
-
-	<%= link_to 'Back', pins_path %>
+		<div class="panel-body">
+			<%= render 'form' %>
+		</div>
+		
+		<div class="panel-footer">
+			<%= link_to 'Back', pins_path %>
+		</div>
+	
+	</div>
 </div>

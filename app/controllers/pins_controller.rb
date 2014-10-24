@@ -1,9 +1,6 @@
 class PinsController < ApplicationController
-    respond_to :html, :xml, :json
-  end
-
-class PinsController < ApplicationController
   before_action :set_pin, only: [:show, :edit, :update, :destroy]
+  respond_to :html, :xml, :json
 
   def index
     @pins = Pin.all
@@ -39,11 +36,11 @@ class PinsController < ApplicationController
   end
 
   private
-    def set_pin
-      @pin = Pin.find(params[:id])
-    end
+  def set_pin
+    @pin = Pin.find(params[:id])
+  end
 
-    def pin_params
-      params.require(:pin).permit(:description, :string)
-    end
+  def pin_params
+    params.require(:pin).permit(:description, :string)
+  end
 end
