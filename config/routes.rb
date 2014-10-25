@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   devise_for :users
   root "pages#home"
   get "about" => "pages#about"
+  get "work" => "pages#work"
   get 'pages/ajax'
   get "something" => "pages#angela" #about_path
 

@@ -1,7 +1,7 @@
 <div class = "jumbotron center">
 	<h2>Welcome to TwoDegrees</h2>
 	<% if user_signed_in? %>
-	<p>You are now connected to TwoDegrees</p>
+			<p>You are now logged in - time to connect</p>
 	<% else %>
 	<p>
 		<%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary" %>
