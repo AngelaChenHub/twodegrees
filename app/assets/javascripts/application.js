@@ -47,9 +47,9 @@ document.addEventListener('DOMContentLoaded', function(){
 		changePicture(0);
 	});
 
-	document.getElementsByClassName('mydiv')[0].addEventListener('mouseover', function (e) {
-		e.target.style.backgroundColor="red";
-	});
+	// document.getElementsByClassName('mydiv')[0].addEventListener('mouseover', function (e) {
+	// 	e.target.style.backgroundColor="red";
+	// });
 
 	slides = document.getElementsByClassName('col-sm-12');
 	slides_total=slides.length;
@@ -80,48 +80,3 @@ function changePicture (slide) {
 	slides[slide].style.display='block';
 };
 
-function ajax() {
-    var xmlhttp;
- 
-    xmlhttp = new XMLHttpRequest();
- 
-    xmlhttp.onreadystatechange = function() {
-        if (xmlhttp.readyState == 4 ) {
-           if(xmlhttp.status == 200){
-               document.getElementById("response").innerHTML = xmlhttp.responseText;
-           }
-           else if(xmlhttp.status == 400) {
-              alert('There was an error 400');
-           }
-           else {
-               alert('something else other than 200 was returned');
-           }
-        }
-    }
- 
-    xmlhttp.open("GET", "/pages/ajax", true);
-    xmlhttp.send();
-}
-
-function angela() {
-    var xmlhttp;
- 
-    xmlhttp = new XMLHttpRequest();
- 
-    xmlhttp.onreadystatechange = function() {
-        if (xmlhttp.readyState == 4 ) {
-           if(xmlhttp.status == 200){
-               document.getElementById("response").innerHTML = xmlhttp.responseText;
-           }
-           else if(xmlhttp.status == 400) {
-              alert('There was an error 400');
-           }
-           else {
-               alert('something else other than 200 was returned');
-           }
-        }
-    }
- 
-    xmlhttp.open("GET", "/pages/angela", true);
-    xmlhttp.send();
-}

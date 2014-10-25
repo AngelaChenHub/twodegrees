@@ -1,21 +1,35 @@
 <div class = "jumbotron center">
-	<h1>Welcome to Pinteresting</h1>
+	<h2>Welcome to TwoDegrees</h2>
 	<% if user_signed_in? %>
-	<p>Welcome to the members page</p>
+	<p>You are now connected to TwoDegrees</p>
 	<% else %>
-		<p>
-			<%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary" %>
-			<%= link_to "Log in", new_user_session_path, class: "btn btn-default" %>
-		</p>
-	<% end %>
-</div>
+	<p>
+		<%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary" %>
+		<%= link_to "Log in", new_user_session_path, class: "btn btn-default" %>
+	</p>
 
-<div id="response">
-</div>
 
-<button id="call" class="btn btn-lg btn-info" onclick="ajax()">Hey...</button>
+	<div class="home_buttons">
+		<div class="row">
+			<div class="btn-group">
 
-<button id="call" class="btn btn-lg btn-info" onclick="angela()">And this is crazy</button>
+				<div class="home_container">
+					<div class="row">
 
-<script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
-<script type="IN/MemberProfile" data-id="https://www.linkedin.com/in/chenangelay" data-format="inline"></script>
+						<div class="col-sm-12 image3">
+							<img src="http://25ol79434c9014zg5k31c56bzux.wpengine.netdna-cdn.com/wp-content/uploads/2014/04/featured-room-divider.jpg" alt="">
+						</div>
+						<div class="col-sm-12 image1">
+							<img src="http://www.gjel.com/01new/media/Copenhagen-Cyclists.jpg" alt="">
+						</div>
+						<div class="col-sm-12 image3">
+							<img src="http://www.energchi.co.uk/wp-content/uploads/2013/12/find-love-berkshire.jpg" alt="">
+						</div>
+
+						<button class="prev btn btn-warning"> LIVE </button>
+						<button class="reset btn btn-info"> WORK </button>
+						<button class="next btn btn-success"> LOVE </button>
+					</div>
+			</div>
+			<% end %>
+		</div>
