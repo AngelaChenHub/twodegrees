@@ -6,6 +6,7 @@ class PagesController < ApplicationController
   end
 
   def angela
+  	render partial: 'angela', formats: :html
   end
 
   def ajax
